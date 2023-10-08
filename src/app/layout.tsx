@@ -1,8 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Lalezar,Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+//const inter = Inter({ subsets: ['latin'], variable:'--fonte-inter' });
+const lalezar = Lalezar({ subsets: ['latin'], weight:'400', variable:'--fonte-lalezar'});
 
 export const metadata: Metadata = {
   title: 'Herbie Web',
@@ -16,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${lalezar.variable} font-sans`}> {children} </body>
     </html>
   )
 }
