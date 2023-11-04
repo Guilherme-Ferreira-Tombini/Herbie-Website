@@ -1,9 +1,10 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Lalezar,Inter } from 'next/font/google'
+import { Lalezar,Inter, Inria_Sans } from 'next/font/google'
 
 //const inter = Inter({ subsets: ['latin'], variable:'--fonte-inter' });
 const lalezar = Lalezar({ subsets: ['latin'], weight:'400', variable:'--fonte-lalezar'});
+const inria_sans = Inria_Sans({ subsets: ['latin'], weight:'400', variable:'--fonte-lalezar'});
 
 export const metadata: Metadata = {
   title: 'Herbie Web',

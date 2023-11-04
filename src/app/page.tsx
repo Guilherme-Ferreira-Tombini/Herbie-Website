@@ -1,9 +1,11 @@
-import Image from 'next/image'
+import InitialPage from './components/InitialPage'
 
 export default function Home() {
   return (
-   <>
-   
+   <> 
+    <InitialPage/>
+  
    </>
+   
   )
 }
