@@ -13,6 +13,7 @@ const config: Config = {
       },
       boxShadow: {
         '3xl': '10px 8px 5px rgba(0, 0, 0, 0.6)',
+        '3xl2': '12px 5px 5px rgba(0, 0, 0, 0.7)',
       },
     },
   },
