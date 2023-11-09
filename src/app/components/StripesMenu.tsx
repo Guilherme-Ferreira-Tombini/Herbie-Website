@@ -6,9 +6,9 @@ export default function StripesMenu() {
     <div className="flex flex-col justify-center items-center absolute w-[95%] p-3">
       <LogoBrand/>
     </div>
-     <div className="bg-red-600 w-[20%] h-[100vh]"/>
-     <div className="bg-white w-[30%] h-[100vh]"/>
-     <div className="bg-blue-800 w-[50%] h-[100vh]"/>
+     <div className="bg-red-600 w-[20%] h-[100vh] hover:w-[70%]"/>
+     <div className="bg-white w-[30%] h-[100vh] hover:w-[70%]"/>
+     <div className="bg-blue-800 w-[50%] h-[100vh] hover:w-[70%]"/>
    </div>
   )
 }
