@@ -1,5 +1,5 @@
 import Image from "next/image"
-import screenshot_Page_Movies from ""
+//import screenshot_Page_Movies from ""
 
 export default function MoviesPage() {
   return (
