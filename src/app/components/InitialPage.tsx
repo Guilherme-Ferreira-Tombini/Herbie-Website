@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import screenshot_image from '../../../public/img/tela.jpg'
 import Stripes from './StripesMenu'
-import ButtonDown from './ButtonDown'
+
 
 export default function InitialPage() {
   return (
@@ -18,7 +18,7 @@ export default function InitialPage() {
             <p className='text-justify w-[100%] text-[31px]'>Se antes você não conhecia esse iconico veiculo dos cinemas, 
               agora pode conhece-lo e ver sua história de origem, 
               de acordo com os filmes.</p>
-             <ButtonDown/>
+             
           </div>
                     
       </div>
