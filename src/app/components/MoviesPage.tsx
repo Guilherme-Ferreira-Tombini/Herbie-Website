@@ -43,10 +43,19 @@ export default function MoviesPage() {
 
             {/* Opções de filmes - inicial */}
             <div className="bg-green-400 w-[70%] h-6">
-                <select onChange={(e) => handleOptionChange(e.target.value)}>
-                  <option value="option1">Opção 1</option>
-                  <option value="option2">Opção 2</option>
-                </select>
+                <input
+                  type="radio"
+                  value="option1"
+                  checked={selectedOption === 'option1'}
+                  onChange={() => handleOptionChange('option1')}
+                />
+
+                <input
+                  type="radio"
+                  value="option2"
+                  checked={selectedOption === 'option2'}
+                  onChange={() => handleOptionChange('option2')}
+                />
             </div>
             {/* Opções de filmes - fim */}
 
