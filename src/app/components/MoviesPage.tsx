@@ -55,8 +55,9 @@ export default function MoviesPage() {
 
   return (
     <div id="container"className="flex flex-row items-center justify-center h-screen w-[100%] bg-black">
+      {/* <Image src={} width={} height={}/> */}
 
-          <div className="bg-slate-700 flex items-center justify-center flex-col w-[50%] h-screen">
+          <div className="flex items-center justify-center flex-col w-[50%] h-screen">
 
             {/* Imagens dos filmes - inicial */}
             <div className="w-[70%] h-[80%] m-2">
@@ -176,7 +177,7 @@ export default function MoviesPage() {
 
           </div>
 
-          <div className=" bg-zinc-700 flex items-center justify-center flex-col w-[50%] h-screen">
+          <div className="flex items-center justify-center flex-col w-[50%] h-screen">
 
             <h1 className=" text-center text-3xl font-medium text-white">{title}</h1>
             {/* <p className="">{resume}</p> */}
