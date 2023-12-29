@@ -17,6 +17,7 @@ const config: Config = {
       },
       backgroundImage: {
         'herbieMovie': "url('/img/Group 9.png')",
+        'Initial': "url('/img/tela.png')",
       }
     },
   },
