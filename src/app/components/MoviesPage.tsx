@@ -1,10 +1,12 @@
 "use client";
 import Image from "next/image"
 import React, { useState } from "react";
+import image from "../../../public/img/Group 9.png"
 
 interface MovieOption {
   imageSrc: string;
   title: string;
+  resume: string;
 }
 
 export default function MoviesPage() {
@@ -14,26 +16,32 @@ export default function MoviesPage() {
     option1: {
       imageSrc: '/img/Herbie1.jpg',
       title: 'Se Meu Fusca Falasse (1968)',
+      resume: "Legal"
     },
     option2: {
       imageSrc: '/img/Herbie2.jpg',
       title: 'As Novas Aventuras do Fusca (1974)',
+      resume: "Legal"
     },
     option3: {
       imageSrc: '/img/Herbie3.jpg',
       title: 'O Fusca Enamorado (1977)',
+      resume: "Legal"
     },
     option4: {
       imageSrc: '/img/Herbie4.jpg',
       title: 'A Última Cruzada do Fusca (1980)',
+      resume: "Legal"
     },
     option5: {
       imageSrc: '/img/Herbie5.jpg',
       title: 'The Love Bug (1997)',
+      resume: "Legal"
     },
     option6: {
       imageSrc: '/img/Herbie6.jpg',
       title: 'Herbie - Meu Fusca Turbinado (2005)',
+      resume: "Legal"
     },
   };
 
@@ -41,10 +49,9 @@ export default function MoviesPage() {
     setSelectedOption(newOption);
   };
 
-  const { imageSrc, title } = options[selectedOption];
+  const { imageSrc, title, resume } = options[selectedOption];
   return (
-    <div id="container"className="flex flex-row items-center justify-center h-screen w-[100%] bg-black">
-      {/* <Image src={} width={} height={}/> */}
+    <div id="container" className="flex flex-row items-center justify-center h-screen w-[100%] bg-herbieMovie bg-auto bg-center bg-origin-border">
 
           <div className="flex items-center justify-center flex-col w-[50%] h-screen">
 
@@ -169,7 +176,7 @@ export default function MoviesPage() {
           <div className="flex items-center justify-center flex-col w-[50%] h-screen">
 
             <h1 className=" text-center text-3xl font-medium text-white">{title}</h1>
-            {/* <p className="">{resume}</p> */}
+            <p className="text-justify text-xl font-normal text-white">{resume}</p>
 
           </div>
       

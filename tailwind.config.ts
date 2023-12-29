@@ -15,6 +15,9 @@ const config: Config = {
         '3xl': '10px 8px 5px rgba(0, 0, 0, 0.6)',
         '3xl2': '12px 5px 5px rgba(0, 0, 0, 0.7)',
       },
+      backgroundImage: {
+        'herbieMovie': "url('/img/Group 9.png')",
+      }
     },
   },
   plugins: [],
