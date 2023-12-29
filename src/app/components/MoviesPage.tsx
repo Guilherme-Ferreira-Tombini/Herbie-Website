@@ -2,57 +2,46 @@
 import Image from "next/image"
 import React, { useState } from "react";
 
+interface MovieOption {
+  imageSrc: string;
+  title: string;
+}
+
 export default function MoviesPage() {
   const [selectedOption, setSelectedOption] = useState<string>('option1'); // inicialize com a opção padrão
 
-  const getImageSrc = (option: string): string => {
-    // Lógica para determinar a imagem com base na opção selecionada
-    switch (option) {
-      case 'option1':
-        return '/img/Herbie1.jpg';
-      case 'option2':
-        return '/img/Herbie2.jpg';
-      case 'option3':
-        return '/img/Herbie3.jpg';
-      case 'option4':
-        return '/img/Herbie4.jpg';
-      case 'option5':
-        return '/img/Herbie5.jpg';
-      case 'option6':
-        return '/img/Herbie6.jpg';
-      default:
-        return '/img/tela.jpg'; // imagem padrão se a opção não for reconhecida
-    }
+  const options: Record<string, MovieOption> = {
+    option1: {
+      imageSrc: '/img/Herbie1.jpg',
+      title: 'Se Meu Fusca Falasse (1968)',
+    },
+    option2: {
+      imageSrc: '/img/Herbie2.jpg',
+      title: 'As Novas Aventuras do Fusca (1974)',
+    },
+    option3: {
+      imageSrc: '/img/Herbie3.jpg',
+      title: 'O Fusca Enamorado (1977)',
+    },
+    option4: {
+      imageSrc: '/img/Herbie4.jpg',
+      title: 'A Última Cruzada do Fusca (1980)',
+    },
+    option5: {
+      imageSrc: '/img/Herbie5.jpg',
+      title: 'The Love Bug (1997)',
+    },
+    option6: {
+      imageSrc: '/img/Herbie6.jpg',
+      title: 'Herbie - Meu Fusca Turbinado (2005)',
+    },
   };
-
-  const getTitle = (option: string): string => {
-    // Lógica para determinar a imagem com base na opção selecionada
-    switch (option) {
-      case 'option1':
-        return "Se Meu Fusca Falasse (1968)";
-      case 'option2':
-        return "As Novas Aventuras do Fusca (1974)";
-      case 'option3':
-        return "O Fusca Enamorado (1977)";
-      case 'option4':
-        return "A Última Cruzada do Fusca (1980)";
-      case 'option5':
-        return "The Love Bug (1997)";
-      case 'option6':
-        return "Herbie - Meu Fusca Turbinado (2005)";
-      default:
-        return "Texto sobre o resumo dos filmes"; // Texto padrão se a opção não for reconhecida
-    }
-  };
-
-  const imageSrc = getImageSrc(selectedOption);
-  const title = getTitle(selectedOption);
-  //const resume = getResume(selectedOption);
 
   const handleOptionChange = (newOption: string) => {
     setSelectedOption(newOption);
   };
 
+  const { imageSrc, title } = options[selectedOption];
   return (
     <div id="container"className="flex flex-row items-center justify-center h-screen w-[100%] bg-black">
       {/* <Image src={} width={} height={}/> */}
