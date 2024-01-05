@@ -1,5 +1,6 @@
 import InitialPage from './components/InitialPage'
 import MoviesPage from './components/MoviesPage'
+import OriginPage from './components/OriginPage'
 import SeparatorPage from './components/SeparatorPage'
 
 export default function Home() {
@@ -8,7 +9,8 @@ export default function Home() {
     <InitialPage/>
     <SeparatorPage/>
     <MoviesPage/>
-  
+    <SeparatorPage/>
+    <OriginPage/>
    </>
    
   )
