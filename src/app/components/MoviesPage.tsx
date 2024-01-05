@@ -16,32 +16,32 @@ export default function MoviesPage() {
     option1: {
       imageSrc: '/img/Herbie1.jpg',
       title: 'Se Meu Fusca Falasse (1968)',
-      resume: "Legal"
+      resume: "O piloto Jim Douglas e seu mecânico Tennessee encontram um fusca branco que parece ter vida propria. Chamando o carro de Herbie, a dupla se foca nas notícias de corrida da Califórnia, o que desagrada o comerciante Peter Thorndyke, que tenta usar sua assistente para intervir entre os amigos e o carro."
     },
     option2: {
       imageSrc: '/img/Herbie2.jpg',
       title: 'As Novas Aventuras do Fusca (1974)',
-      resume: "Legal"
+      resume: "O fusca Herbie tenta evitar que um empresário construa um edifício perto da casa de sua dona. Enquanto as máquinas se preparam para iniciar as obras, Herbie e seus amigos chegam para encerrar as obras antes que comece."
     },
     option3: {
       imageSrc: '/img/Herbie3.jpg',
       title: 'O Fusca Enamorado (1977)',
-      resume: "Legal"
+      resume: "Herbie viaja para disputar uma corrida no famoso circuito de Monte Carlo. Lá, ele se apaixona e vai viver uma grande aventura, pois criminosos esconderam uma joia valiosa no fusca, e vão fazer de tudo para recuperá-la."
     },
     option4: {
       imageSrc: '/img/Herbie4.jpg',
       title: 'A Última Cruzada do Fusca (1980)',
-      resume: "Legal"
+      resume: "Em uma corrida que começa no México e termina no Rio de Janeiro, Herbie, o fusca com personalidade própria, se envolve em várias aventuras e tenta impedir que bandidos roubem o ouro de uma valiosa cidade Inca."
     },
     option5: {
       imageSrc: '/img/Herbie5.jpg',
       title: 'The Love Bug (1997)',
-      resume: "Legal"
+      resume: "Herbie é passado para um novo dono. Juntos, eles devem lutar contra um piloto covarde e seu carro 'Horace', um malvado Herbie."
     },
     option6: {
       imageSrc: '/img/Herbie6.jpg',
       title: 'Herbie - Meu Fusca Turbinado (2005)',
-      resume: "Legal"
+      resume: "Maggie Peyton quer se tornar um piloto da NASCAR, mas seu pai superprotetor, Ray Peyton, não quer. Ray, que foi um piloto, quer que Maggie arrume um emprego de locutora de esportes para TV porque é mais lucrativo e deixe a pista para seu irmão. Quando Ray leva Maggie a um ferro-velho para escolher um carro, ela não tem ideia de que o pequeno Volkswagen chamado Herbie que ela leva para casa vai mudar sua vida"
     },
   };
 
@@ -173,10 +173,10 @@ export default function MoviesPage() {
 
           </div>
 
-          <div className="flex items-center justify-center flex-col w-[50%] h-screen">
+          <div className="flex items-center justify-center flex-col w-[60%] h-screen flex-nowrap">
 
-            <h1 className=" text-center text-3xl font-medium text-white">{title}</h1>
-            <p className="text-justify text-xl font-normal text-white">{resume}</p>
+            <h1 className=" text-center text-6xl font-medium text-white mb-8 w-[90%]">{title}</h1>
+            <p className="text-justify text-2xl font-normal text-white w-[75%]">{resume}</p>
 
           </div>
       
