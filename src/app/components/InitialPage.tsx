@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import screenshot_image from '../../../public/img/tela.png'
 import Stripes from './StripesMenu'
 
 
