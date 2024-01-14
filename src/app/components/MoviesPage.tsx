@@ -51,7 +51,7 @@ export default function MoviesPage() {
 
   const { imageSrc, title, resume } = options[selectedOption];
   return (
-    <div id="container" className="flex flex-row items-center justify-center h-screen w-[100%] bg-herbieMovie bg-auto bg-center bg-origin-border">
+    <div className="flex flex-row items-center justify-center h-screen w-[100%] bg-herbieMovie bg-auto bg-center bg-origin-border">
 
           <div className="flex items-center justify-center flex-col w-[50%] h-screen">
 

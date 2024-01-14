@@ -1,3 +1,4 @@
+import Footer from './components/Footer'
 import InitialPage from './components/InitialPage'
 import MoviesPage from './components/MoviesPage'
 import OriginPage from './components/OriginPage'
@@ -13,6 +14,7 @@ export default function Home() {
     <SeparatorPage/>
     <OriginPage/>
     <Programer/>
+    <Footer/>
    </>
    
   )
